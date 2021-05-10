@@ -99,6 +99,10 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
+.button:focus,
+.button:hover {
+  background-color: rgb(24, 140, 232);
+}
 /* -------------------------------- End hero -------------------------------- */
 
 /* -------------------------------- Advantage ------------------------------- */
@@ -184,11 +188,11 @@ body {
   color: var(--title-text-color);
   background-color: var(--filtr-primery-bck);
   font-weight: 500;
-  font-size-: 16px;
   line-height: 1.39;
   cursor: pointer;
 }
-.portfolio-filtr .button:focus {
+.portfolio-filtr .button:focus,
+.portfolio-filtr .button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
