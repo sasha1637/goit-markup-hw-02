@@ -16,7 +16,6 @@
   --secondary-grey-color: rgba(245, 244, 250, 1);
   --primary-logo-color: rgba(0, 0, 0, 1);
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --filtr-primery-bck: rgb(245, 244, 250);
 }
 body {
   background-color: var(--primary-white-color);
@@ -170,11 +169,13 @@ body {
 .footer-address .link {
   line-height: 1.71;
   color: var(--primary-white-color);
+  font-style: normal;
 }
 
 .footer-address-list .link {
   line-height: 1.71;
   color: var(--footer-contacts-color);
+  font-style: normal;
 }
 .footer-address .link:hover,
 .footer-address .link:focus,
@@ -186,7 +187,7 @@ body {
 /* -------------------------------- Portfolio ------------------------------- */
 .portfolio-filtr .button {
   color: var(--title-text-color);
-  background-color: var(--filtr-primery-bck);
+  background-color: var(--secondary-grey-color);
   font-weight: 500;
   line-height: 1.39;
   cursor: pointer;
