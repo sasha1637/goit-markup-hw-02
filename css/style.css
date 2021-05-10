@@ -9,33 +9,200 @@
 /* вторичный цвет фона rgba(245, 244, 250, 1) */
 
 :root {
-  --primary-text-color: rgba(33, 33, 33, 1);
-  --title-text-color: rgba(117, 117, 117, 1);
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: rgba(33, 33, 33, 1);
   --accent-color: rgba(33, 150, 243, 1);
-  --primary-white-color:rgba(255, 255, 255, 1);
-  --secondary-grey-color:rgba(245, 244, 250, 1);
-  --primary-logo-color:rgba(0, 0, 0, 1);
+  --primary-white-color: rgba(255, 255, 255, 1);
+  --secondary-grey-color: rgba(245, 244, 250, 1);
+  --primary-logo-color: rgba(0, 0, 0, 1);
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --filtr-primery-bck: rgb(245, 244, 250);
 }
 body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
-.list {
-  list-style: none;
-}
-.logo {
-    color: var(--primary-logo-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
- }
- .logo-web{
-    color: var(--accent-color);
- }
+
+/* ------------------------------- Components ------------------------------- */
 
 .list {
   list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* ----------------------------- End  Components ---------------------------- */
+
+/* --------------------------------- Header --------------------------------- */
+/* ---------------------------------- logo ---------------------------------- */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-first-part {
+  color: var(--accent-color);
+}
+.header .logo {
+  color: var(--primary-logo-color);
+}
+/*                                  End logo                                  */
+
+.nav-list .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+.nav-list .link:hover,
+.nav-list .link:focus,
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+/* ------------------------------ End Site nav ------------------------------ */
+
+/* ---------------------------------- Hero ---------------------------------- */
+
+.hero-main-title {
+  color: var(--primary-white-color);
+  background-color: rgb(22, 22, 22);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Button */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* -------------------------------- End hero -------------------------------- */
+
+/* -------------------------------- Advantage ------------------------------- */
+
+.advantage-title {
+  color: transparent;
+  /* ------------------------------- скрыл как смог ------------------------------- */
+}
+.advantage-list .title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  font-weight: bold;
+}
+.advantage-list .description {
+  line-height: 1.71;
+}
+/* ------------------------------ End Advantage ----------------------------- */
+
+/* -------------------------------- Services -------------------------------- */
+.services-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* ------------------------------ End Services ------------------------------ */
+
+/* ---------------------------------- Team ---------------------------------- */
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.team-list .profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* -------------------------------- End team -------------------------------- */
+
+/* --------------------------------- Footer --------------------------------- */
+/* ---------------------------------- logo ---------------------------------- */
+
+.footer .logo {
+  color: var(--primary-white-color);
+}
+/*                                  End logo                                  */
+
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+.footer-address .link {
+  line-height: 1.71;
+  color: var(--primary-white-color);
+}
+
+.footer-address-list .link {
+  line-height: 1.71;
+  color: var(--footer-contacts-color);
+}
+.footer-address .link:hover,
+.footer-address .link:focus,
+.footer-address-list .link:hover,
+.footer-address-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* -------------------------------- Portfolio ------------------------------- */
+.portfolio-filtr .button {
+  color: var(--title-text-color);
+  background-color: var(--filtr-primery-bck);
+  font-weight: 500;
+  font-size-: 16px;
+  line-height: 1.39;
+  cursor: pointer;
+}
+.portfolio-filtr .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.portfolio-list .portfolio-title {
+  color: var(--title-text-color);
+  font-style: 700;
+  font-size: 18px;
+  line-height: 1.71;
+  align: left;
+  letter-spacing: 0.06em;
+}
+.portfolio-list .description {
+  font-size: 16px;
+  line-height: ;
+  height: 1.6;
+}
+/* --------------------------------End Portfolio ------------------------------- */
