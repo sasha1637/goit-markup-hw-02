@@ -166,17 +166,16 @@ body {
 .footer {
   background-color: rgba(47, 48, 58, 1);
 }
-.footer-address .link {
-  line-height: 1.71;
-  color: var(--primary-white-color);
-  font-style: normal;
-}
 
 .footer-address-list .link {
   line-height: 1.71;
   color: var(--footer-contacts-color);
   font-style: normal;
 }
+.footer-address-list .map {
+  color: var(--primary-white-color);
+}
+
 .footer-address .link:hover,
 .footer-address .link:focus,
 .footer-address-list .link:hover,
